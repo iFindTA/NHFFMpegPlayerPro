@@ -10,5 +10,6 @@
 #define NHFFMpegPlayerPro_prefix_pch
 
 #import <PBKits.h>
+#import <Masonry.h>
 
 #endif /* NHFFMpegPlayerPro_prefix_pch */

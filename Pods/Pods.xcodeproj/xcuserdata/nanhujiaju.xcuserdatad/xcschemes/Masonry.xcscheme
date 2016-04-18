@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AED2118A1821CF128A77E45BB0ACE114'
-               BlueprintName = 'Pods-NHFFMpegPlayerPro'
+               BlueprintIdentifier = '53480ED0BE09FF49E34B1702D485CAAB'
+               BlueprintName = 'Masonry'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-NHFFMpegPlayerPro.a'>
+               BuildableName = 'libMasonry.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
