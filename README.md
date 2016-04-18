@@ -48,6 +48,27 @@ Yasm是一个完全重写的 NASM 汇编。目前，它支持x86和AMD64指令�
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ffmpeg_1.png)
 
 选择对应的版本执行脚本即可！
+执行完毕后得到如下结果：
 
-## FFMpeg执行编译时的错误：
+![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ffmpeg_2.png)
+
+## FFMpeg集成Xcode Project：
+直接把ffmpeg-iOS文件加入到工程中即可：
+
+![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ffmpeg_3.png)
+
+```
+extend library：
+libz.dylib
+libbz2.dylib
+libiconv.dylib
+CoreMedia.framwork
+AVFoundation.framwork
+```
+
+
+## FFMpeg遇到的错误：
+```
 ＊如果下载源码时卡住不动，请检查网络是否开启了代理（可以切换到全局模式）
+＊编译的时候报错： 'libavcodec/avcodec.h' file not found ，修改Header search paths 里的路径：$(PROJECT_DIR)/vendor/FFmpeg-iOS/include
+```
