@@ -1,0 +1,14 @@
+//
+//  NHFFMpegPlayerPro-prefix.pch
+//  NHFFMpegPlayerPro
+//
+//  Created by hu jiaju on 16/4/18.
+//  Copyright © 2016年 hu jiaju. All rights reserved.
+//
+
+#ifndef NHFFMpegPlayerPro_prefix_pch
+#define NHFFMpegPlayerPro_prefix_pch
+
+#import <PBKits.h>
+
+#endif /* NHFFMpegPlayerPro_prefix_pch */
