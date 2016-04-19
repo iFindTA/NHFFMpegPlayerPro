@@ -3,7 +3,7 @@ Movie Player With FFMpeg !(for objc)
 
 ## FFMpeg的编译
 [简书参考](http://www.jianshu.com/p/ec432a8f5729)
-### step1-准备资源：
+### 准备资源：
 ```
 1、gas-preprocessor
 2、yasm
@@ -14,7 +14,9 @@ Movie Player With FFMpeg !(for objc)
 ```
 gas-preprocessor 其实就是我们要编译 FFmpeg 的所需脚本文件。
 ```
+
 ＊下载[gas-preprocessor](https://github.com/libav/gas-preprocessor)
+
 ＊解压后如下图：
 
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ffmpeg_0.png)
@@ -43,6 +45,7 @@ Yasm是一个完全重写的 NASM 汇编。目前，它支持x86和AMD64指令�
 并打包成一个 iOS 可用的 ffmpeg 库提供给我们了!大神之作！
 ```
 ＊下载[FFmpeg-iOS-build-script](https://github.com/kewlbear/FFmpeg-iOS-build-script)
+
 ＊解压后如图：
 
 ![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ffmpeg_1.png)
@@ -72,3 +75,16 @@ AVFoundation.framwork
 ＊如果下载源码时卡住不动，请检查网络是否开启了代理（可以切换到全局模式）
 ＊编译的时候报错： 'libavcodec/avcodec.h' file not found ，修改Header search paths 里的路径：$(PROJECT_DIR)/vendor/FFmpeg-iOS/include
 ```
+
+
+## SDL的编译
+使用系统播放音频只能播放iOS平台支持的音频格式，SDL播放音频则没有限制
+### 准备资源：[SDL官网](http://www.sdltutorials.com/)下载源码，解压后如下：
+
+![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ffmpeg_4.png)
+
+###SDL编译：
+很简单，如上图直接打开SDL.xcodeproj工程和编译普通静态库一样编译你需要的对应平台的.a静态库即可得到libSDL2.a文件，如下：
+
+![image](https://raw.githubusercontent.com/iFindTA/screenshots/master/ffmpeg_5.png)
+
