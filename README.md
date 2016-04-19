@@ -102,3 +102,20 @@ clang: error: linker command failed with exit code 1 (use -v to see invocation)
 在Other Link Flag去掉-Objc/$(inherited)标示可以编译成功！
 如有小伙伴有更好的解决办法，请发邮件到:nanhujiaju@gmail.com
 
+```
+extend library：
+CoreAudio.framwork
+CoreMotion.framwork
+AudioToolbox.framework
+GameController.framework
+```
+## KxMovieExample的使用
+KxmovieExample支持RTSP、RTMP、HTTP等协议下的视频播放，具体可见[官网](https://github.com/kolyvan/kxmovie),很强大，只是未使用到SDL处理音频，已经能满足大部分的需求。(FFPlay默认使用SDL处理音、视频)
+需要引入系统库：
+```
+CoreGraphics.framework
+QuartCore.framework
+OpenGLES.framework
+CoreVideo.framework
+VideoToolbox.framework
+```
